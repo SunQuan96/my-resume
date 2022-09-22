@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>我的简历</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3666325_68jdclqg854.css">
+    <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* common css */
+        .pill {}
+
+        .layout {
+            max-width: 900px;
+            margin: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        /* page css */
+        body {
+            font: 16px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+            color: #333;
+        }
+
+        .wrapper {
+            background-color: #ececec;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .aside {
+            float: left;
+            width: 280px;
+        }
+
+        .aside .user {
+            text-align: center;
+            padding: 30px 0 20px 0;
+        }
+
+        .aside .user h1 {
+            font-size: 40px;
+        }
+
+        .aside .user h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            border-top: 1px solid #d6d6d6;
+            margin: 16px auto;
+        }
+
+        .aside .user::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            margin-top: 20px;
+            border-top: 20px solid #d6d6d6;
+            border-bottom: 20px solid transparent;
+            border-right: 140px solid #d6d6d6;
+            border-left: 140px solid transparent;
+
+        }
+
+        .aside .contact {
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .aside .contact li {
+            border-bottom: 1px solid#d6d6d6;
+            list-style: none;
+            line-height: 30px;
+        }
+
+        .aside .contact .iconfont {
+            border-right: 1px solid#d6d6d6;
+            padding-right: 10px;
+            margin-right: 10px;
+            display: online-block;
+            padding-left: 10px;
+            font-size: 20px;
+            color: #7bbaaa;
+        }
+
+        .aside .skills {
+            background: #7bbaaa;
+            padding: 20px;
+            color: #fff
+        }
+
+        .aside .skills h2 {
+            font-size: 30px;
+        }
+
+        .aside .skills dt {
+            color: #eee;
+            margin-top: 20px;
+        }
+
+        .aside .skills dd {
+            height: 2px;
+            background: #57a797;
+            display: block;
+            border-radius: 2px;
+            margin-top: 1px;
+        }
+
+        /* .aside .skills .mastery {
+            height: 4px;
+            background: #fff;
+            display: block;
+            border-radius: 2px;
+        } */
+        .aside .others {
+            margin-top: 20px;
+        }
+
+        .aside .others H2 {
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        .main {
+            margin-left: 280px;
+            background: #fff;
+            height: 600px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper layout clearfix">
+        <div class="aside">
+            <div class="user">
+                <h1>孙权</h1>
+                <p>应聘前端工程师</p>
+            </div>
+            <ul class="contact">
+                <li><span class="iconfont icon-email "></span>1097610301sq@gmail.com</li>
+                <li><span class="iconfont icon-phone "></span>18271416258</li>
+                <li><span class="iconfont icon-weixin "></span>Sun_quan_66</li>
+                <li><span class="iconfont icon-experience "></span>应届生</li>
+                <li><span class="iconfont icon-education "></span>研究生</li>
+
+            </ul>
+            <div class="skills">
+                <h2>我的技能</h2>
+                <dl>
+                    <dt>JavaScript/HTML/CSS3/SVG</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
+                    <dt>Vue/Vuex/Vue-router</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
+                    <dt>Node.js</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
+                    <dt>Webpack/Parcel/Npm Script</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
+                    <dt>ES6/Sass/PostCSS/Babel</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
+
+                </dl>
+            </div>
+
+            <div class="others">
+                <H2>其他<H2>
+                        <ul class="contact">
+                            <li><span class="iconfont icon-github "></span><a
+                                    href="https://github.com/SunQuan96">GitHub</a></li>
+                            <li><span class="iconfont icon-juejin "></span><a
+                                    href="https://juejin.cn/user/1852022288029063">博客</a></li>
+                            <li><span class="iconfont icon-stack-overflow"></span><a
+                                    href="https://stackoverflow.com/users/20051470/quan-sun">Stack OverFlow</a>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <p>main</p>
+        </div>
+    </div>
+</body>
+
+</html>
