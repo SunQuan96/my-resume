@@ -45,6 +45,7 @@
             background-color: #ececec;
             margin-top: 30px;
             margin-bottom: 30px;
+            padding-top: 40px;
         }
 
         .aside {
@@ -54,7 +55,7 @@
 
         .aside .user {
             text-align: center;
-            padding: 30px 0 20px 0;
+            padding-bottom: 20px;
         }
 
         .aside .user h1 {
@@ -144,9 +145,53 @@
         .main {
             margin-left: 280px;
             background: #fff;
-            height: 600px;
-            margin-top: 20px;
+            padding: 40px;
             margin-right: 20px;
+        }
+
+        .main .intro {
+            overflow: hidden;
+        }
+
+        .main .intro img {
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+
+        .main .intro p {
+            margin-left: 120px;
+        }
+
+        .main .projectExperience h2 {
+            font-size: 40px;
+            color: #d9d9d9;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main .projects h2 {
+            font-size: 40px;
+            color: #d9d9d9;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main .education h2 {
+            font-size: 40px;
+            color: #d9d9d9;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main .education h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .main .education li {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -162,24 +207,24 @@
                 <li><span class="iconfont icon-email "></span>1097610301sq@gmail.com</li>
                 <li><span class="iconfont icon-phone "></span>18271416258</li>
                 <li><span class="iconfont icon-weixin "></span>Sun_quan_66</li>
-                <li><span class="iconfont icon-experience "></span>应届生</li>
+                <li><span class="iconfont icon-experience "></span>1年前端经验</li>
                 <li><span class="iconfont icon-education "></span>研究生</li>
-
             </ul>
             <div class="skills">
                 <h2>我的技能</h2>
                 <dl>
-                    <dt>JavaScript/HTML/CSS3/SVG</dt>
+                    <dt>熟练掌握HTML(5)和常用CSS(3)，具有像素级还原设计稿的能力，具有平均水准之上的审美，追求设计的优雅。</dt>
                     <dd><span class="mastery" style="width: 90%"></span></dd>
-                    <dt>Vue/Vuex/Vue-router</dt>
+                    <dt>熟练掌握原生JavaScript,掌握重要的概念如：原型，闭包，作用域链，异步流程控制等。能够根据面对对象思想利用JS/jQuery封装常用插件。熟练使用ES6部分新特性。</dt>
                     <dd><span class="mastery" style="width: 90%"></span></dd>
-                    <dt>Node.js</dt>
+                    <dt>熟悉Vue/Vuex/Vue-router，并有相关项目踩坑脱坑的经验。</dt>
                     <dd><span class="mastery" style="width: 90%"></span></dd>
-                    <dt>Webpack/Parcel/Npm Script</dt>
+                    <dt>熟悉HTTP协议及浏览器渲染原理，了解前端性能优化策略。</dt>
                     <dd><span class="mastery" style="width: 90%"></span></dd>
-                    <dt>ES6/Sass/PostCSS/Babel</dt>
+                    <dt>熟悉Yarn&Npm&Git,能够使用Node.js搭配Express进行基本后台开发。</dt>
                     <dd><span class="mastery" style="width: 90%"></span></dd>
-
+                    <dt>英语能力优秀，能流畅阅读英文文献。拥有总结书写技术博客的习惯。</dt>
+                    <dd><span class="mastery" style="width: 90%"></span></dd>
                 </dl>
             </div>
 
@@ -198,9 +243,60 @@
         </div>
 
         <div class="main">
-            <p>main</p>
+            <div class="intro clearfix">
+                <img src="" alt="">
+                <P>前端对于我而言，是理性与性感的完美结合，逻辑的精密搭配设计的笃定，诠释一名优秀工程师的必备品质。</P>
+            </div>
+            <div class="education">
+                <h2>教育经历</h2>
+                <div class="detail">
+                    <h3>湖北大学--理学--硕士</h3>
+                    <ul>
+                        <li>合缘奖学金</li>
+                        <li>湖北大学研究生学业奖学金</li>
+                        <li>优秀毕业生风华学子奖学金</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="projectExperience">
+                <h2>项目经验</h2>
+                <div class="detail">
+                    <h3>多人共享博客</h3>
+                    <ul>
+                        <li>项目描述：本项目为一款多人共享博客，包含首页、用户文章列表、登录、注册、个人管理、编辑、发布等功能。</li>
+                        <li>使用 Vue.js 技术栈：vue-cli/vue2/axios/vue-router/vuex/es6/npm</li>
+                        <li>个人承担工作：主要负责前段一系列工作，包括UI设计，技术选型，项目开发等。</li>
+                        <li>GitHub地址：<a href="https://sunquan96.github.io/blog-vue" target="_blank">点击访问</a></li>
+                    </ul>
+                </div><br>
+                <div class="detail">
+                    <h3>小冰后台管理系统</h3>
+                    <ul>
+                        <li>项目描述：该项目用于统计用户支付，下单，收藏情况，可以实效查询，预估费用；提供数据统计与可视化展示，提供用户数据管理平台。</li>
+                        <li>技术内容：前端采用Vue技术，UI库使用ElementUI；采用CSS模块化和Vue组件化设计方案，提高开发效率，代码简洁，复用率高，项目可维护性高；使用vuex管理数据，vue-router路由跳转；mockjs模拟后台数据；使用axios发送请求，调用后台数据，保证网页数据实时更新。
+                        </li>
+                        <li>个人承担工作：主要负责前段一系列工作，包括UI设计，技术选型，项目开发等。</li>
+                        <li>GitHub地址：<a href="https://sunquan96.github.io/vue-manage" target="_blank">点击访问</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="work"></div>
+            <div class="projects">
+                <h2>开源项目</h2>
+                <div class="detail">
+                    <h3>会动的冰墩墩</h3>
+                    <ul>
+                        <li>GitHub地址：<a href="https://sunquan96.github.io/bingDwenDwen/src/test.html"
+                                target="_blank">点击访问</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
 </body>
 
 </html>
